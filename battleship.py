@@ -1,3 +1,5 @@
+## a simple 5x5 grid 2-D battleship game I've created that account for different user inputs 
+
 from random import randint
 
 board = []
