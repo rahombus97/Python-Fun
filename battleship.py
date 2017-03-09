@@ -25,14 +25,12 @@ def random_col(board):
 ship_row = random_row(board)
 ship_col = random_col(board)
 
+#3.
 for turn in range(4):
-    print "Turn", turn + 1
-
-#3.    
     guess_row = int(raw_input("Guess Row:"))
-#4.    
+    
     guess_col = int(raw_input("Guess Col:"))
-#5.
+
     if guess_row == ship_row and guess_col == ship_col:
         print "Congratulations! You sunk my battleship!" 
         break
@@ -45,7 +43,8 @@ for turn in range(4):
             print "You missed my battleship!"
             board[guess_row][guess_col] = "X"
             if turn == 3:
-                print "Game Over"           
+                print "Game Over"
+    print "Turn", turn + 1            
     print_board(board)
     
     
